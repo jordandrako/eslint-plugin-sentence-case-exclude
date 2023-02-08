@@ -35,9 +35,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "sentence-case-exclude/sentence-case": ["error", {
-            "exclude": ["Some Proper Noun"]
-        }]
+        "sentence-case-exclude/rule-name": 2
     }
 }
 ```
