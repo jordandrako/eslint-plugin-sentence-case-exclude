@@ -1,46 +1,51 @@
-# eslint-plugin-sentence-case
+# eslint-plugin-sentence-case-exclude
 
-Enforce that string literals are in sentence case.
+Enforce that string literals are in sentence case, allowing for exclusions.
 
 ## Installation
 
-You'll first need to install [ESLint](http://eslint.org):
+You'll first need to install [ESLint](https://eslint.org/):
 
-```
-$ npm i eslint --save-dev
-```
-
-Next, install `eslint-plugin-sentence-case`:
-
-```
-$ npm install eslint-plugin-sentence-case --save-dev
+```sh
+npm i eslint --save-dev
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-sentence-case` globally.
+Next, install `eslint-plugin-sentence-case-exclude`:
+
+```sh
+npm install eslint-plugin-sentence-case-exclude --save-dev
+```
 
 ## Usage
 
-Add `sentence-case` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `sentence-case-exclude` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
     "plugins": [
-        "sentence-case"
+        "sentence-case-exclude"
     ]
 }
 ```
-
 
 Then configure the rules you want to use under the rules section.
 
 ```json
 {
     "rules": {
-        "sentence-case/rule-name": 2
+        "sentence-case-exclude/sentence-case": ["error", {
+            "exclude": ["Some Proper Noun"]
+        }]
     }
 }
 ```
 
-## Supported Rules
+## Rules
 
-* [`sentence-case`](docs/rules/sentence-case.md)
+<!-- begin auto-generated rules list -->
+
+| Name                                         | Description                                                                |
+| :------------------------------------------- | :------------------------------------------------------------------------- |
+| [sentence-case](docs/rules/sentence-case.md) | Enforce that string literals are in sentence case, allowing for exclusions |
+
+<!-- end auto-generated rules list -->
