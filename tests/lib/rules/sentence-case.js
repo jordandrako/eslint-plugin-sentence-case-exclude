@@ -61,7 +61,7 @@ ruleTester.run("sentence-case", rule, {
       options: [{ exclude: ["Proper Noun"] }]
     },
     {
-      code: "'Name Of Place'",
+      code: "'Short sentence with Name Of Place'",
       options: [{ exclude: ["Name Of Place"] }]
     }
   ],
