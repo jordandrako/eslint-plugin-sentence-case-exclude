@@ -1,5 +1,7 @@
 # eslint-plugin-sentence-case-exclude
 
+[![npm version](https://badge.fury.io/js/eslint-plugin-sentence-case-exclude.svg)](https://badge.fury.io/js/eslint-plugin-sentence-case-exclude)
+
 Enforce that string literals are in sentence case, allowing for exclusions.
 
 ## Installation
